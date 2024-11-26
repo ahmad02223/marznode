@@ -1,0 +1,31 @@
+{
+  "log": {
+    "level": "info",
+    "output": "stdout"
+  },
+  "inbounds": [
+    {
+      "type": "quic",
+      "tag": "quic-inbound",
+      "listen": "0.0.0.0",
+      "listen_port": 443,
+      "users": [
+        {
+          "id": "",
+          "password": "tetststststststststaa"
+        }
+      ],
+      "tls": {
+        "enabled": true,
+        "certificate_path": "/path/to/your/cert.pem",
+        "key_path": "/path/to/your/key.pem"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct-outbound"
+    }
+  ]
+}
