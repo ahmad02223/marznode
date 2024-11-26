@@ -9,14 +9,17 @@ services:
       XRAY_EXECUTABLE_PATH: "/usr/local/bin/xray"
       XRAY_ASSETS_PATH: "/usr/local/lib/xray"
       XRAY_CONFIG_PATH: "/var/lib/marznode/xray_config.json"
-      SING_BOX_EXECUTABLE_PATH: "/usr/local/bin/sing-box"
+      HYSTERIA_ENABLED: "True"
       HYSTERIA_EXECUTABLE_PATH: "/usr/local/bin/hysteria"
+      HYSTERIA_CONFIG_PATH: "/var/lib/marznode/hysteria.yaml"
+      SING_BOX_ENABLED: "True"
+      SING_BOX_EXECUTABLE_PATH: "/usr/bin/sing-box"
+      SING_BOX_CONFIG_PATH: "/var/lib/marznode/sing-box/config.json"
+      SING_BOX_RESTART_ON_FAILURE: "True"
+      SING_BOX_RESTART_ON_FAILURE_INTERVAL: "1"
       SSL_CLIENT_CERT_FILE: "/var/lib/marznode/client.pem"
       SSL_KEY_FILE: "./server.key"
       SSL_CERT_FILE: "./server.cert"
-      HYSTERIA_EXECUTABLE_PATH: "/usr/local/bin/hysteria"
-      HYSTERIA_CONFIG_PATH: "/var/lib/marznode/hysteria.yaml"
-      HYSTERIA_ENABLED: "True"
 
     volumes:
       - /var/lib/marznode:/var/lib/marznode
