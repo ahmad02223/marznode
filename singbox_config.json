@@ -1,0 +1,8 @@
+{
+    "inbounds": [],
+    "outbounds": [
+        {
+            "type": "direct"
+        }
+    ]
+}
